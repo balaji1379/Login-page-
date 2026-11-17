@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Login</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #2563eb);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .log {
+            width: 350px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            color: #1e293b;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .log h2 {
+            margin-top: 0;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #1e3a8a;
+        }
+
+        .email {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #334155;
+        }
+
+        input {
+            width: 100%;
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        input:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 5px rgba(37,99,235,0.3);
+        }
+
+        .password {
+            margin-bottom: 15px;
+        }
+
+        button {
+            margin-top: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            background-color: #2563eb;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #1e3a8a;
+        }
+
+        .forgot {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="log">
+
+        <h2>Login Page</h2>
+
+        <form>
+            <div class="email">
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email" required>
+            </div>
+
+            <div class="password">
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" required>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="forgot">
+            <a href="#">Forgot Password?</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
